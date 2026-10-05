@@ -1,5 +1,6 @@
 package com.github.barfurth.jb.plastic.annotator
 
+import com.intellij.java.syntax.parser.JavaKeywords
 import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiKeyword
 import com.intellij.psi.PsiLiteralExpression
@@ -12,26 +13,26 @@ class JavaSemanticColoringAnnotator : AbstractSemanticColoringAnnotator() {
 
   override fun getSemanticKeywords(): Map<String, SemanticTokenType> {
     return mapOf(
-      PsiKeyword.TRUE to SemanticTokenType.CONSTANT,
-      PsiKeyword.FALSE to SemanticTokenType.CONSTANT,
-      PsiKeyword.NULL to SemanticTokenType.CONSTANT,
+      JavaKeywords.TRUE to SemanticTokenType.CONSTANT,
+      JavaKeywords.FALSE to SemanticTokenType.CONSTANT,
+      JavaKeywords.NULL to SemanticTokenType.CONSTANT,
 
-      PsiKeyword.CLASS to SemanticTokenType.STORAGE,
-      PsiKeyword.RECORD to SemanticTokenType.STORAGE,
-      PsiKeyword.INTERFACE to SemanticTokenType.STORAGE,
-      PsiKeyword.ENUM to SemanticTokenType.STORAGE,
-      PsiKeyword.VAR to SemanticTokenType.STORAGE,
-      PsiKeyword.CONST to SemanticTokenType.STORAGE,
+      JavaKeywords.CLASS to SemanticTokenType.STORAGE,
+      JavaKeywords.RECORD to SemanticTokenType.STORAGE,
+      JavaKeywords.INTERFACE to SemanticTokenType.STORAGE,
+      JavaKeywords.ENUM to SemanticTokenType.STORAGE,
+      JavaKeywords.VAR to SemanticTokenType.STORAGE,
+      JavaKeywords.CONST to SemanticTokenType.STORAGE,
 
-      PsiKeyword.CHAR to SemanticTokenType.TYPE,
-      PsiKeyword.BOOLEAN to SemanticTokenType.TYPE,
-      PsiKeyword.LONG to SemanticTokenType.TYPE,
-      PsiKeyword.FLOAT to SemanticTokenType.TYPE,
-      PsiKeyword.INT to SemanticTokenType.TYPE,
-      PsiKeyword.BYTE to SemanticTokenType.TYPE,
-      PsiKeyword.SHORT to SemanticTokenType.TYPE,
-      PsiKeyword.DOUBLE to SemanticTokenType.TYPE,
-      PsiKeyword.VOID to SemanticTokenType.TYPE,
+      JavaKeywords.CHAR to SemanticTokenType.TYPE,
+      JavaKeywords.BOOLEAN to SemanticTokenType.TYPE,
+      JavaKeywords.LONG to SemanticTokenType.TYPE,
+      JavaKeywords.FLOAT to SemanticTokenType.TYPE,
+      JavaKeywords.INT to SemanticTokenType.TYPE,
+      JavaKeywords.BYTE to SemanticTokenType.TYPE,
+      JavaKeywords.SHORT to SemanticTokenType.TYPE,
+      JavaKeywords.DOUBLE to SemanticTokenType.TYPE,
+      JavaKeywords.VOID to SemanticTokenType.TYPE,
     )
   }
 

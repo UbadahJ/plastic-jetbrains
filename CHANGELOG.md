@@ -4,6 +4,16 @@
 
 ## [Unreleased]
 
+## [1.0.0]
+### Added
+- Islands theme support (based on Islands Dark)
+- K2 Kotlin mode support for the Kotlin semantic annotator
+
+### Changed
+- require IntelliJ Platform 2025.3 (253) or newer, no upper build limit
+- tool windows, gutter and console now share the editor background inside islands
+- migrate build to IntelliJ Platform Gradle Plugin 2.x
+
 ## [0.3.0]
 ### Fixed
 - set maximum build number to 221.* for current EAP (fixes #5)
