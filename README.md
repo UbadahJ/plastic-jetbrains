@@ -12,6 +12,8 @@ Jetbrains IDEs. In order to set some colors a custom annotator was implemented. 
 some things Jetbrains Platform IDEs do not usually allow highlighting of. The custom annotator requires a specific
 implementation per language in order to define which keywords are to be highlighted in what colors. The goal is to
 be closer to the semantic highlighting used by VS Code.
+
+Built on the Islands look, requires IntelliJ Platform 2025.3 or newer.
 <!-- Plugin description end -->
 
 ## Installation
